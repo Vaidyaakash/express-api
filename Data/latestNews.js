@@ -33,4 +33,4 @@ const latest = (req, res) => {
     ])
 }
 
-module.exports = latest;
+module.exports.latestNews = latest;

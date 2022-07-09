@@ -33,4 +33,4 @@ const homeApi = (req, res) => {
     ])
 }
 
-module.exports = homeApi
+module.exports.homeNews = homeApi
