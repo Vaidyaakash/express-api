@@ -3,6 +3,7 @@ const homeRouter = require('./Routes/home');
 const latestRoute = require('./Routes/LetestN');
 const app = express()
 
+app.use(cors())
 app.use('/main', homeRouter)
 app.use('/main', latestRoute)
 
