@@ -1,9 +1,11 @@
 const express = require('express');
 const homeRouter = require('./Routes/home');
 const latestRoute = require('./Routes/LetestN');
+const cors = require("cors")
 const app = express()
 
 app.use(cors())
+
 app.use('/main', homeRouter)
 app.use('/main', latestRoute)
 
