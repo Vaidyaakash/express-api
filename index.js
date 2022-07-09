@@ -9,6 +9,6 @@ app.use(cors())
 app.use('/main', homeRouter)
 app.use('/main', latestRoute)
 
-app.listen(4545, () => {
+app.listen( process.env.PORT || 4545, () => {
     console.log("app is started");
 })
